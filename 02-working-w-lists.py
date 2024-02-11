@@ -71,11 +71,11 @@ print(sum(num_one_million)) """
 players = ["charles", "martina", "michael", "florence", "eli"]
 print(f"All: {players}")  # print all players
 print(f"First three: {players[0:3]}")  # print the first three players
-print(f"2nd to 4th: {players[1:4]}")  # print the second through fourth players
+print(f"2nd to 4th: {players[1:4]}")  # print 2nd through 4th players
 print(f"First three: {players[:3]}")  # omitting start index, start = 0
-print(f"Last three: {players[2:]}")  # omitting the end index, end = end of list
+print(f"Last three: {players[2:]}")  # omitting end index, end = end of list
 (f"Last three: {players[-3:]}")  # print the last three players
-print(f"First three: {players[:-3]}")  # print all but the last three players
+print(f"First three: {players[:-3]}")  # print all but the last 3
 
 ### Looping through a slice
 
@@ -110,3 +110,60 @@ print(f"Friends fav games: {friends_fav_games}")  # same list
 # ----------------------------------------------
 
 ## Tuples
+
+"""
+A tuple is an immutable list, 
+which means you can't change the values 
+in a tuple once it's been defined.
+You can still access the values in a tuple.
+"""
+
+dimensions = (200, 50)  # create a tuple
+print(dimensions[0])  # access a value in the tuple
+print(dimensions[1])
+
+# dimensions[0] = 250 # this will not work, tuples are immutable
+
+one_val_tuple = (3,)  # single value tuple, needs a comma
+
+## Writing over a tuple
+
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)  # print each per line
+
+print("Original dimensions:")
+dim_val = []
+for dimension in dimensions:
+    dim_val.append(dimension)  # append each value to a list
+print(dim_val)
+
+dimensions = (400, 100)  # redefine the tuple with new values
+print("Modified dimensions:")
+dim_val = []
+for dimension in dimensions:
+    dim_val.append(dimension)  # append each value to a list
+print(dim_val)
+
+buffet_items = ("pizza", "pasta", "salad", "bread", "soup")
+# buffet_items.remove("bread") # this will not work, tuples are immutable
+# del buffet_items[1] # this will not work, tuples are immutable
+# buffet_items.insert(1, "burger") # this will not work, tuples are immutable
+# buffet_items.append("burger")  # this will not work, tuples are immutable
+buffet_list = []
+for item in buffet_items:
+    buffet_list.append(item)
+print(buffet_list)
+
+# ----------------------------------------------
+
+# Styling your code
+
+"""
+PEP 8 is a style guide for Python code.
+It's a good idea to follow PEP 8
+when writing Python code.
+Review ./pep8-guidelines for more information.
+"""
+
+# ----------------------------------------------
