@@ -1,4 +1,4 @@
-# PEP 8 Guideliens
+# PEP 8 Guidelines
 
 The PEP 8 -- Style Guide for Python Code offers comprehensive guidelines for writing readable, consistent, and aesthetically pleasing code in Python. Here's a condensed version of the guide in bullet points:
 
