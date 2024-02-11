@@ -1,0 +1,60 @@
+motorcycles = ["honda", "yamaha", "suzuki"]
+print(motorcycles)
+
+del motorcycles[0]  # del removes the item by index permanently
+print(motorcycles)
+
+motorcycles.append(
+    "ducati"
+)  # append() adds the item to the end of the list permanently
+print(motorcycles)
+
+motorcycles.insert(
+    1, "mercedes"
+)  # insert() adds the item to the specified index permanently
+print(motorcycles)
+
+
+friends_motorcycles = motorcycles[:]  # `:` is used to copy the list
+friends_motorcycles.append("bmw")
+print(friends_motorcycles)
+print(motorcycles)
+
+last_owned = (
+    motorcycles.pop()
+)  # pop() removes the last item from the list and returns it
+print(f"The first motorcycle I owned was a {last_owned.title()}.")
+
+first_owned = motorcycles.pop(
+    0
+)  # pop(0) removes the first item from the list and returns it
+print(f"The first motorcycle I owned was a {first_owned.title()}.")
+
+motorcycles = ["honda", "yamaha", "suzuki", "ducati"]
+motorcycles.remove("suzuki")  # remove() removes the item by value permanently
+print(motorcycles)
+too_expensive = "ducati"
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort()  # sort() sorts the list in alphabetical order permanently
+print(cars)
+
+cars.sort(
+    reverse=True
+)  # sort(reverse=True) sorts the list in reverse alphabetical order
+print(cars)
+
+# sorted() sorts the list without modifying the original list
+print(f"temp sorted cars: {sorted(cars)}")
+print(f"original cars: {cars}")
+
+cars = ["bmw", "audi", "toyota", "subaru"]
+print(f"\noriginal cars: {cars}")
+cars.reverse()  # reverse() reverses the list permanently
+print(f"reversed cars: {cars}")
+
+car_num = len(cars)  # len() returns the length of the list
+print(f"Number of cars: {car_num}")
