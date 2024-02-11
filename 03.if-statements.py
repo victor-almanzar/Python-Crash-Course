@@ -48,3 +48,5 @@ print(age >= 21)  # False
 print("")
 
 # Checking Multiple Conditions
+
+# reference ./truth-table.md
