@@ -1,6 +1,9 @@
+# PEP 8 Guideliens
+
 The PEP 8 -- Style Guide for Python Code offers comprehensive guidelines for writing readable, consistent, and aesthetically pleasing code in Python. Here's a condensed version of the guide in bullet points:
 
-### Code Layout
+## Code Layout
+
 - **Indentation:** Use 4 spaces per indentation level.
 - **Line Length:** Limit all lines to a maximum of 79 characters for code and 72 for comments.
 - **Blank Lines:** Use blank lines to separate functions and classes, and within functions to indicate logical sections.
@@ -10,32 +13,39 @@ The PEP 8 -- Style Guide for Python Code offers comprehensive guidelines for wri
 - **Naming Conventions:** Use descriptive naming styles for different types (e.g., `CamelCase` for classes, `lowercase_with_underscores` for functions and variables).
 - **Encoding:** Code in the core Python distribution should always use UTF-8, and files should not have an encoding declaration if they use ASCII-only.
 
-### String Quotes
+## String Quotes
+
 - In Python, single-quoted strings and double-quoted strings are the same. PEP 8 does not recommend one over the other; consistency is key.
 
-### Whitespace in Expressions and Statements
+## Whitespace in Expressions and Statements
+
 - Avoid extraneous whitespace in the following situations:
   - Immediately inside parentheses, brackets, or braces.
   - Between a trailing comma and a following close parenthesis.
   - Immediately before a comma, semicolon, or colon.
   - However, in slicing, a space is used after the colon for readability.
 
-### When to Use Trailing Commas
+## When to Use Trailing Commas
+
 - Use trailing commas in sequences of items when they are multiline to simplify adding or removing items.
 
-### Comments
+## Comments
+
 - Comments should contrast with the code to clarify and not confuse.
 - Block comments apply to the code that follows and should be indented to the same level.
 - Inline comments should be used sparingly and should be separated by at least two spaces from the statement.
 
-### Documentation Strings
+## Documentation Strings
+
 - Write docstrings for all public modules, functions, classes, and methods. Docstrings should begin with a capital letter and end with a period.
 - The docstring should be a phrase ending in a period if the method is simple and its operation is obvious.
 
-### Version Bookkeeping
+## Version Bookkeeping
+
 - If you have to have Subversion, CVS, or RCS crud in your source file, do it as follows.
 
-### Naming Conventions
+## Naming Conventions
+
 - Avoid using names that are too general or too wordy. Strike a good balance between the two.
 - Never use characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as single character variable names.
 - Package and Module Names: Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
@@ -44,7 +54,8 @@ The PEP 8 -- Style Guide for Python Code offers comprehensive guidelines for wri
 - Variable Names: Use the same convention as function names.
 - Constants: Constants are usually defined on a module level and written in all capital letters with underscores separating words.
 
-### Programming Recommendations
+## Programming Recommendations
+
 - Comparisons to singletons like None should always be done with `is` or `is not`, never the equality operators.
 - Use `is not` operator rather than `not ... is`. While both expressions are functionally identical, the former is more readable and preferred.
 - When implementing order comparisons, use the `<`, `<=`, `>`, `>=` operators instead of the `==` and `!=` operators. There is a subtlety when the operands are of different types.
